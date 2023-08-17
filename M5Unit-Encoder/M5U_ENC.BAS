@@ -3,7 +3,8 @@
 120 'https://docs.m5stack.com/ja/unit/encoder
 130 'Init
 140   CLS
-150   DEFINT C,I:WE$="":WB$="":LV%=0
+150   DEFINT A-Z
+155   WE$="":WB$="":L=0
 160   _IOTFIND("device/i2c_a",C)
 170   IF C=0 THEN 210
 180   _IOTFIND("device/i2c_a",A$(0),C)
@@ -30,10 +31,10 @@
 390   IF WE$=S$ THEN GOSUB 480:GOTO 460 ELSE WE$=S$
 400   L$=HEX$(ASC(MID$(S$,1,1))):IF LEN(L$)=1 THEN L$="0"+L$
 410   H$=HEX$(ASC(MID$(S$,2,1))):IF LEN(H$)=1 THEN H$="0"+H$
-420   EV%=VAL("&H"+H$+L$)
-430   IF LV%>EV% THEN GOSUB 540 ELSE GOSUB 520
-440   LV%=EV%
-450   PRINT "ENCODER:";EV%
+420   E=VAL("&H"+H$+L$)
+430   IF L>E THEN GOSUB 540 ELSE GOSUB 520
+440   L=E
+450   PRINT "ENCODER:";E
 460   RETURN
 470 'Control RGB LED Color: REG,LED index,RED,GREEN,BLUE
 480   'Init       - both OFF
