@@ -2,6 +2,7 @@
 20 'Test Code: M5 ANGLE for MSX0
 30 'https://docs.m5stack.com/ja/unit/angle
 40 CLS
+45 SCREEN 1:DEFINT A-Z:KEY OFF:WIDTH 32:COLOR 15,0,0
 50 _IOTGET("device/analog/in",A)
 60 'A= MIN:0, MAX:4095
 70 LOCATE 0,12:PRINT "VALUE:";A
