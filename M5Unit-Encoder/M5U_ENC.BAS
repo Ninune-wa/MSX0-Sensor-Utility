@@ -3,7 +3,7 @@
 120 'https://docs.m5stack.com/ja/unit/encoder
 130 'Init
 140   CLS
-150   DEFINT A-Z
+150   SCREEN 1:DEFINT A-Z:KEY OFF:WIDTH 32:COLOR 15,0,0
 160   WE$="":WB$="":L=0
 170   _IOTFIND("device/i2c_a",C)
 180   IF C=0 THEN 220
