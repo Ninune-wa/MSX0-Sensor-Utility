@@ -11,6 +11,7 @@ LDO3の制御レジスター: 12H
 
 LDO3の制御: Bit3(0:disable 1:enable)
 
+[AXP192 Dataseet](https://github.com/m5stack/M5-Schematic/blob/master/Core/AXP192 20Datasheet_v1.1_en_draft_2211.pdf)
 
 ### Ex.コマンドライン(ワンライナー)
 コマンドラインにコピペして動作を確認できます。
