@@ -16,15 +16,15 @@ LDO3の制御: Bit3(0:disable 1:enable)
 コマンドラインにコピペして動作を確認できます。
 - 振動ON
 ```
-D$="device/i2c_i/34":RG$=CHR$(&H12):_IOTPUT(D$,RG$):_IOTGET(D$,S):_IOTPUT(D$,RG$+CHR$(S OR &B00001000))
+DT$="device/i2c_i/34":RG$=CHR$(&H12):_IOTPUT(DT$,RG$):_IOTGET(DT$,V):_IOTPUT(DT$,RG$+CHR$(V OR &B00001000))
 ```
 
 - 振動OFF
 ```
-D$="device/i2c_i/34":RG$=CHR$(&H12):_IOTPUT(D$,RG$):_IOTGET(D$,S):_IOTPUT(D$,RG$+CHR$(S AND &B11110111))
+DT$="device/i2c_i/34":RG$=CHR$(&H12):_IOTPUT(DT$,RG$):_IOTGET(DT$,V):_IOTPUT(DT$,RG$+CHR$(V AND &B11110111))
 ```
 
 - 振動ON/OFF（トグル）
 ```
-D$="device/i2c_i/34":RG$=CHR$(&H12):_IOTPUT(D$,RG$):_IOTGET(D$,S):_IOTPUT(D$,RG$+CHR$(S XOR &B00001000))
+DT$="device/i2c_i/34":RG$=CHR$(&H12):_IOTPUT(DT$,RG$):_IOTGET(DT$,V):_IOTPUT(DT$,RG$+CHR$(V XOR &B00001000))
 ```
