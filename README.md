@@ -1,4 +1,4 @@
-# MSX0-Grove-Sensor-Utils
-MSX0用のGroveセンサーモジュールの動作確認用プログラムを配置します。
+# MSX0-Sensor-Utility
+MSX0用のセンサーの動作確認用プログラムを配置しています。
 
-Place a program to check the operation of the Grove sensor module for MSX0
+Place a program to check the operation of the sensor for MSX0
