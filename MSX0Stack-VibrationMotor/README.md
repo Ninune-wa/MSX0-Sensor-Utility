@@ -5,7 +5,7 @@
 ### 振動モーターに関する仕様
 MSX0Stackの振動モーターは、AXP192のLDO3に接続されています。
 
-AXP192 I2C Address： ０x３４
+AXP192 I2C Address: ０x３４
 
 LDO3の制御レジスター: 12H
 
