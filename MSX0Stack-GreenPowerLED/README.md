@@ -1,9 +1,9 @@
-## MSX0Stackの電源通知用のGreenPowerLEDの動作確認用プログラムです。
+## MSX0StackのPower Indicator Light(Green LED)の動作確認用プログラムです。
 
-0.5秒間隔でLチカをさせます。
+0.5秒間隔でLEDを点灯/消灯します。
 
-### GreenPowerLEDに関する仕様
-MSX0StackのGreenPowerLEDは、AXP192のGPIO1に接続されています。[AXP192 Dataseet](https://github.com/m5stack/M5-Schematic/blob/master/Core/AXP192%20Datasheet_v1.1_en_draft_2211.pdf)
+### Power Indicator Lightに関する仕様
+MSX0StackのPower Indicator Lightは、AXP192のGPIO1に接続されています。[AXP192 Dataseet](https://github.com/m5stack/M5-Schematic/blob/master/Core/AXP192%20Datasheet_v1.1_en_draft_2211.pdf)
 
 AXP192 I2C Address: ０x３４
 
