@@ -3,11 +3,7 @@
 内蔵振動モーターを2秒間振動させます。
 
 ### 振動モーターに関する仕様
-MSX0Stackの振動モーターは、AXP192のLDO3に接続されています。
-
-[AXP192 Dataseet](https://github.com/m5stack/M5-Schematic/blob/master/Core/AXP192%20Datasheet_v1.1_en_draft_2211.pdf)
-
-
+MSX0Stackの振動モーターは、AXP192のLDO3に接続されています。[AXP192 Dataseet](https://github.com/m5stack/M5-Schematic/blob/master/Core/AXP192%20Datasheet_v1.1_en_draft_2211.pdf)
 
 AXP192 I2C Address: ０x３４
 
