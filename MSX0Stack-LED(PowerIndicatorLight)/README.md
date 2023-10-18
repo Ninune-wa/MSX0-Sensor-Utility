@@ -14,6 +14,15 @@ GPIO1の制御: Bit1(1:disable 0:enable)
 
 ### Ex.コマンドライン(ワンライナー)
 コマンドラインにコピペして動作を確認できます。
+
+※MSX0起動後に１度CALL IOTFINDを実行してデバイスツリーにI2Cデバイスを認識させておく必要があります。
+
+
+- IOTFIND
+```
+DT$="device/i2c_i":_IOTFIND(DT$,C)
+```
+
 - LED ON
 ```
 DT$="device/i2c_i/34":RG$=CHR$(&H94):_IOTPUT(DT$,RG$):_IOTGET(DT$,V):_IOTPUT(DT$,RG$+CHR$(V AND &B11111101))
