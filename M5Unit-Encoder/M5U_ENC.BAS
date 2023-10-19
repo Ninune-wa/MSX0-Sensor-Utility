@@ -7,11 +7,11 @@
 160   DT$="device/i2c_a" 'Device Tree
 170   WE$="":WB=0:EV=0:LV=0
 180 'Device Connect Check
-190   _IOTFIND(DT$,C)
-200   IF C=0 THEN PRINT "PORT.A is device not found...":BEEP:END
-210   _IOTFIND(DT$,A$(0),C)
+190   _IOTFIND(DT$,FI)
+200   IF FI=0 THEN PRINT "PORT.A is device not found...":BEEP:END
+210   _IOTFIND(DT$,FS$(0),FI)
 220   DT$=DT$+"/"+IA$ 'Device Tree for Unit Encorder
-230   FOR I I=0 TO C-1:IF A$(I)=IA$ THEN 250 ELSE NEXT I
+230   FOR I I=0 TO FI-1:IF FS$(I)=IA$ THEN 250 ELSE NEXT I
 240   PRINT "M5 Unit Encoder is not found...":BEEP:END
 250 'Init device
 260   GOSUB 500 'LED ALL OFF
