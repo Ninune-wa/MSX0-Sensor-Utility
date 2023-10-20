@@ -5,7 +5,7 @@
 140   IA$="34" 'I2C Address for Unit Encoder
 150   DT$="device/i2c_i" 'Device Tree
 160   RG$=CHR$(&H12) 'REG 12H:DC-DC1/3 & LDO2/3 output control
-170 'Device Connect Check
+170 'Device Check
 180   _IOTFIND(DT$,FI)
 190   IF FI=0 THEN PRINT "Internal I2C device not found...":BEEP:END
 200   _IOTFIND(DT$,FS$(0),FI)
