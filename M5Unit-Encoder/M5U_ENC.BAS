@@ -43,7 +43,7 @@
 520   'Button     - LED All BLUE
 530   LI$=CHR$(&H0):R$=CHR$(&H0):G$=CHR$(&H0):B$=CHR$(&HFF):GOTO 580
 540   'Left turn  - LED 1 RED
-550   N$=CHR$(&H1):R$=CHR$(&HFF):G$=CHR$(&H0):B$=CHR$(&H0):GOTO 580
+550   LI$=CHR$(&H1):R$=CHR$(&HFF):G$=CHR$(&H0):B$=CHR$(&H0):GOTO 580
 560   'Right turn - LED 2 GREEN
 570   LI$=CHR$(&H2):R$=CHR$(&H0):G$=CHR$(&HFF):B$=CHR$(&H0):GOTO 580
 580 'Control RGB LED Color: REG,LED index,RED,GREEN,BLUE
