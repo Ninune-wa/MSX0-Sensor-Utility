@@ -26,15 +26,15 @@ DT$="device/i2c_i":_IOTFIND(DT$,C)
 
 - 振動ON
 ```
-DT$="device/i2c_i/34":RG$=CHR$(&H12):_IOTPUT(DT$,RG$):_IOTGET(DT$,V):_IOTPUT(DT$,RG$+CHR$(V OR &B00001000))
+DT$="device/i2c_i/34":RG$=CHR$(&H12):_IOTPUT(DT$,RG$):_IOTGET(DT$,GI):_IOTPUT(DT$,RG$+CHR$(GI OR &B00001000))
 ```
 
 - 振動OFF
 ```
-DT$="device/i2c_i/34":RG$=CHR$(&H12):_IOTPUT(DT$,RG$):_IOTGET(DT$,V):_IOTPUT(DT$,RG$+CHR$(V AND &B11110111))
+DT$="device/i2c_i/34":RG$=CHR$(&H12):_IOTPUT(DT$,RG$):_IOTGET(DT$,GI):_IOTPUT(DT$,RG$+CHR$(GI AND &B11110111))
 ```
 
 - 振動ON/OFF（トグル）
 ```
-DT$="device/i2c_i/34":RG$=CHR$(&H12):_IOTPUT(DT$,RG$):_IOTGET(DT$,V):_IOTPUT(DT$,RG$+CHR$(V XOR &B00001000))
+DT$="device/i2c_i/34":RG$=CHR$(&H12):_IOTPUT(DT$,RG$):_IOTGET(DT$,GI):_IOTPUT(DT$,RG$+CHR$(GI XOR &B00001000))
 ```
