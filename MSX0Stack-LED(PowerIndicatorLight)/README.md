@@ -25,15 +25,15 @@ DT$="device/i2c_i":_IOTFIND(DT$,C)
 
 - LED ON
 ```
-DT$="device/i2c_i/34":RG$=CHR$(&H94):_IOTPUT(DT$,RG$):_IOTGET(DT$,V):_IOTPUT(DT$,RG$+CHR$(V AND &B11111101))
+DT$="device/i2c_i/34":RG$=CHR$(&H94):_IOTPUT(DT$,RG$):_IOTGET(DT$,GI):_IOTPUT(DT$,RG$+CHR$(GI AND &B11111101))
 ```
 
 - LED OFF
 ```
-DT$="device/i2c_i/34":RG$=CHR$(&H94):_IOTPUT(DT$,RG$):_IOTGET(DT$,GV):_IOTPUT(DT$,RG$+CHR$(GV OR &B00000010))
+DT$="device/i2c_i/34":RG$=CHR$(&H94):_IOTPUT(DT$,RG$):_IOTGET(DT$,GI):_IOTPUT(DT$,RG$+CHR$(GI OR &B00000010))
 ```
 
 - LED ON/OFF（トグル）
 ```
-DT$="device/i2c_i/34":RG$=CHR$(&H94):_IOTPUT(DT$,RG$):_IOTGET(DT$,GV):_IOTPUT(DT$,RG$+CHR$(GV XOR &B00000010))
+DT$="device/i2c_i/34":RG$=CHR$(&H94):_IOTPUT(DT$,RG$):_IOTGET(DT$,GI):_IOTPUT(DT$,RG$+CHR$(GI XOR &B00000010))
 ```
