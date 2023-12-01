@@ -1,4 +1,4 @@
-## M5 ANGLEの動作確認用プログラムです。
+## M5 ANGLE(potentiometer)の動作確認用プログラムです。
 
 PORT.B(ANALOG)の取得と表示を行います。
 
