@@ -2,7 +2,7 @@
 110 'Test Code: MSX0Stack Vibration motor
 120 'Init
 130   CLS:SCREEN 1:DEFINT A-Z:KEY OFF:WIDTH 32:COLOR 15,0,0
-140   IA$="34" 'I2C Address for Unit Encoder
+140   IA$="34" 'I2C Address for AXP192
 150   DT$="device/i2c_i" 'Device Tree
 160   RG$=CHR$(&H12) 'REG 12H:DC-DC1/3 & LDO2/3 output control
 170 'Device Connect Check
