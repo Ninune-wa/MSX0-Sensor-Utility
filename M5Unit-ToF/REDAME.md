@@ -13,4 +13,4 @@ Link:
 - M5 UNIT ToF 
 - SKU:U010
 
-https://docs.m5stack.com/ja/unit/angle
+https://docs.m5stack.com/ja/unit/tof
