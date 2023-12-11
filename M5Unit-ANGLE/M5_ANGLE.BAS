@@ -1,7 +1,0 @@
-100 'SAVE "M5_ANGLE.BAS"
-110 'Test Code: M5 ANGLE for MSX0
-120 'https://docs.m5stack.com/ja/unit/angle
-130   CLS:SCREEN 1:DEFINT A-Z:KEY OFF:WIDTH 32:COLOR 15,0,0
-140   _IOTGET("device/analog/in",A) 'A= MIN:0, MAX:4095
-150   LOCATE 0,12:PRINT "VALUE:";A
-160   GOTO 140
