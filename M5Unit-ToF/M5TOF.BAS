@@ -37,10 +37,10 @@
 460   L$=FN HEX0$(GB(11)):H$=FN HEX0$(GB(10)):DC=VAL("&H"+H$+L$)'Distance:
 470   ST=(GB(0) AND &H78) / 8                                   'DeviceRangeStatusInternal
 480 'Print
-490   LOCATE 0,IL  :PRINT USING "&           &:#### ";"Ambient Count";AC
-500   LOCATE 0,IL+1:PRINT USING "&           &:#### ";"Signal  Count";SC
-510   LOCATE 0,IL+2:PRINT USING "&           &:#### ";"Distance [mm]";DC
-520   LOCATE 0,IL+3:PRINT USING "&           &:#### ";"DeviceStatus";ST
+490   LOCATE 0,IL  :PRINT USING "Ambient Count:#### ";AC
+500   LOCATE 0,IL+1:PRINT USING "Signal  Count:#### ";SC
+510   LOCATE 0,IL+2:PRINT USING "Distance [mm]:#### ";DC
+520   LOCATE 0,IL+3:PRINT USING "DeviceStatus :#### ";ST
 530   'Wait
 540   TIME=0
 550   IF TIME < 10 THEN 550
