@@ -1,8 +1,9 @@
-100 'SAVE "M5U_ENC.BAS"
+100 'SAVE "M5ENC.BAS"
 110 'Test Code: M5 Unit Encoder for MSX0
-120 'https://docs.m5stack.com/ja/unit/encoder
+120 'https://docs.m5stack.com/en/unit/encoder
 130 'Init
 140   CLS:SCREEN 1:DEFINT A-Z:KEY OFF:WIDTH 32:COLOR 15,0,0
+145   DEF FN HEX0$(VI)=RIGHT$("0"+HEX$(VI),2)'Function: "0" + HEX$
 150   IA$="40" 'I2C Address for Unit Encoder
 160   DT$="device/i2c_a" 'Device Tree
 170   WE$="":WB=0:EV=0:LV=0
@@ -23,19 +24,18 @@
 320   RG$=CHR$(&H20)
 330   _IOTPUT(DT$,RG$):_IOTGET(DT$,GI)
 340   IF WB=GI THEN GOTO 370 ELSE WB=GI
-350   IF GI=0 THEN GOSUB 520:BS$="Press" ELSE GOSUB 500:BS$="-----"
+350   IF GI=0 THEN GOSUB 520:BS$="Press":TIME=0 ELSE GOSUB 500:BS$="-----"
+355   IF TIME<10 THEN 355
 360   PRINT "BUTTON : ";BS$
 370   RETURN
 380 'Print & Read encoder value: REG,VALUE_L,VALUE_H
 390   RG$=CHR$(&H10)
 400   _IOTPUT(DT$,RG$):_IOTGET(DT$,GS$)
 410   IF WE$=GS$ THEN GOSUB 500:GOTO 480 ELSE WE$=GS$
-420   L$=RIGHT$("0"+HEX$(ASC(LEFT$(GS$,1))),2)
-430   H$=RIGHT$("0"+HEX$(ASC(MID$(GS$,2,1))),2)
-440   EV=VAL("&H"+H$+L$)
+420   L$=FN HEX0$(ASC(LEFT$(GS$,1))):H$=FN HEX0$(ASC(MID$(GS$,2,1))):EV=VAL("&H"+H$+L$)
 450   IF LV>EV THEN GOSUB 560 ELSE GOSUB 540
 460   LV=EV
-470   PRINT "ENCODER:";EV
+470   PRINT USING "ENCODER:######";EV
 480   RETURN
 490 'Set LED Index & LED Color(RGB)
 500   'Init       - LED All OFF
