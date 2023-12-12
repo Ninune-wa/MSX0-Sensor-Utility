@@ -14,7 +14,7 @@ _IOTGET("device/analog/in",A):PRINT A
 
 
 ### 製品情報
-- M5 ANGLE 
+- M5 UNIT ANGLE 
 - SKU:U005
 
 https://docs.m5stack.com/ja/unit/angle
