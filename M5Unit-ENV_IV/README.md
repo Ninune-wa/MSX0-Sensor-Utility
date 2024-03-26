@@ -12,7 +12,7 @@ Link:
 SHT40とBMP280で取得したそれぞれの気温も表示されます。
 
 ### BASICプログラム
-- [M5ENV4.BAS](https://github.com/Ninune-wa/MSX0-Sensor-Utility/blob/main/M5Unit-ENV_IV/M5ENV４.BAS)
+- [M5ENV4.BAS](https://github.com/Ninune-wa/MSX0-Sensor-Utility/blob/main/M5Unit-ENV_IV/M5ENV4.BAS)
 
 ### 製品情報
 - M5 Unit ENV IV
