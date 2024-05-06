@@ -42,4 +42,4 @@ PORT.B(ANALOG)に接続したM5 DUAL BUTTON UNITの押したボタンに応じ�
 - M5 DUAL BUTTON UNIT
 - SKU:U025
 
-https://docs.m5stack.com/ja/unit/angle
+tps://docs.m5stack.com/ja/unit/dual_button
