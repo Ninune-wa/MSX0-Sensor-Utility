@@ -30,6 +30,8 @@ Grove ケーブル 20cm　１個
 
 20KΩ抵抗 3個
 
+## 回路図
+[回路図](https://github.com/Ninune-wa/MSX0-Sensor-Utility/blob/main/M5Unit-DUAL_BUTTON/image/M5D-BTN_DGM.jpeg)
 
 ### 製品情報
 - M5 DUAL BUTTON UNIT
