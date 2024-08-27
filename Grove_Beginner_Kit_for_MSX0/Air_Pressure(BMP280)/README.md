@@ -1,5 +1,5 @@
 Link:
-[https://github.com/Ninune-wa/MSX0-Sensor-Utility/tree/main/Grove_Beginner_Kit_for_MSX0/Air_Pressure(BMP280)](https://github.com/Ninune-wa/MSX0-Sensor-Utiliy/Grove_Beginner_Kit_for_MSX0/Air_Pressure(BMP280))
+[https://github.com/Ninune-wa/MSX0-Sensor-Utility/tree/main/Grove_Beginner_Kit_for_MSX0/Air_Pressure(BMP280)](https://github.com/Ninune-wa/MSX0-Sensor-Utility/tree/main/Grove_Beginner_Kit_for_MSX0/Air_Pressure(BMP280))
 
 .dsk:
 [https://github.com/Ninune-wa/MSX0-Sensor-Utility/blob/main/MSX0-Sensor-Utility.dsk](https://github.com/Ninune-wa/MSX0-Sensor-Utility/blob/main/MSX0-Sensor-Utility.dsk)
