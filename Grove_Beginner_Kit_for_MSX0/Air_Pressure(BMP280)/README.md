@@ -11,17 +11,12 @@ BMP280から、温度・気圧・簡易高度を表示します。
 １.センサーはMSX0のPort.A(赤)に接続します。
 
 ANK表示
-
-
------BMP280-----
 temperature :   **.** degrees C
 Pressure    : ****.** hPa
 Approx altit:   ***.** m
-----------------
+
 
 漢字表示
-
-
 気温：℃
 気圧：　hPa
 高度(簡易)：　m
