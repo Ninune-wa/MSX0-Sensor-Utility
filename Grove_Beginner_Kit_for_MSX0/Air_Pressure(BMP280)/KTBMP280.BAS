@@ -4,7 +4,7 @@
 1030 'Init
 1040   _IOTPUT("msx/me/pm/cpu/percent",200) 'Kaio-ken x2
 1050   SCREEN 1:DEFINT A-Z:KEY OFF:WIDTH 32:COLOR 15,4,7
-1060   KJ=0 ' 0:ANK mode 1:KANJI mode
+1060   KJ=1 ' 0:ANK mode 1:KANJI mode
 1070   IF KJ=0 THEN CLS:ON STOP GOSUB 2730 ELSE _KANJI:_CLS:ON STOP GOSUB 2710
 1080   STOP ON
 1090   DEF FN HEX0$(VI)=RIGHT$("0"+HEX$(VI),2)'Function: "0" + HEX$
@@ -132,6 +132,7 @@
 2500 'Print KANJI
 2510   LOCATE 0,IL  :GET DATE DA$:PRINT USING "&          &: @";"うれおt";DA$
 2520   LOCATE 0,IL+1:GET TIME TM$:PRINT USING "&          &: @";"ょせゅっ";TM$
+2540   LOCATE 0,IL+4:PRINT USING "&          &:#####.## ♥ょ";"ぉCぅキ";CT!
 2550   LOCATE 0,IL+5:PRINT USING "&          &:#####.## hPa";"ぉCぃウ";HP#
 2560   LOCATE 0,IL+6:PRINT USING "&          &:#####.## m";"ゅ♣うx(ぇネぃユ)";AL#
 2570   GOTO 1830 'Return Main
