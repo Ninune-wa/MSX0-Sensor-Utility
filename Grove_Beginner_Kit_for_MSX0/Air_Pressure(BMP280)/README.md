@@ -1,0 +1,12 @@
+Link:
+[https://github.com/Ninune-wa/MSX0-Sensor-Utility/tree/main/Grove_Beginner_Kit_for_MSX0/Air_Pressure(BMP280)](https://github.com/Ninune-wa/MSX0-Sensor-Utiliy/Grove_Beginner_Kit_for_MSX0/Air_Pressure(BMP280))
+
+.dsk:
+[https://github.com/Ninune-wa/MSX0-Sensor-Utility/blob/main/MSX0-Sensor-Utility.dsk](https://github.com/Ninune-wa/MSX0-Sensor-Utility/blob/main/MSX0-Sensor-Utility.dsk)
+## Grove Begginner Kit for MSX0　の温度・気圧センサー（BMP280）の動作確認用プログラムです。
+
+距離の測定をmm単位で行います。(設定はデフォルトだと2m以内)
+
+### BASICプログラム
+- [KTBMP280.BAS](https://github.com/Ninune-wa/MSX0-Sensor-Utility/blob/main/Grove_Beginner_Kit_for_MSX0/Air_Pressure(BMP280)/KTBMP280.BAS)
+
