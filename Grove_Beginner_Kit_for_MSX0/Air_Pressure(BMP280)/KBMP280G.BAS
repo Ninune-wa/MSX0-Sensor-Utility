@@ -133,7 +133,7 @@
 2470 '  LOCATE 0,IL+9:PRINT USING "&          &:#####.## m";"Approx altitude";AL#
 2480 '  LOCATE 0,IL+10:PRINT "----------------"
 2481   GET DATE DA$:GET TIME TM$:PSET(0,0),1:PRINT #1,DA$;" ";TM$;" ";HP#;"hPa";"  "
-2482   HP#=1000:Y=MY*(MH-HP#)/RG
+2482   Y=MY*(MH-HP#)/RG
 2483   PSET(MX,BY),15:PSET(MX-1,Y),7
 2484   COPY (NX+1,NY)-(MX,MY) TO (NX,NY)
 2485   'Interval wait
