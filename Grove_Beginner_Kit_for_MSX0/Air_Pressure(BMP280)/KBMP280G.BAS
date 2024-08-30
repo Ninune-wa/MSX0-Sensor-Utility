@@ -18,8 +18,8 @@
 1160   IL=3:DL=16 'Infomation Locate:Debug Locate
 1165   BH=1013.25 'Base Hectpascal 1023.25 hPa
 1166   NX=0:NY=8:MX=255:MY=202 'Canvas Size: miN X,Y / Max X,Y
-1167   BY=MY/2 ' Base Y 1/2
-1168   IT=60 'Interval Time(sec): 1min=60sec, 5min=300sec, 10min=600sec
+1167   MH=1100:NH=900:RG=MH-NH:BY=MY*(MH-1013.25)/RG ' MAX hP, Min hP, Range, Base Y (1013.25)
+1168   IT=300 'Interval Time(sec): 1min=60sec, 5min=300sec, 10min=600sec
 1180   IA$(0)="77" '0x76:I2C Address for Unit Grove Beginner Kit AirPressure(BMP280)
 1200   DT$(0)=DA$+"/"+IA$(0) 'Device Tree for Unit Grove Beginner Kit AirPressure(BMP280)
 1210 'Device Check(PORT.A)
@@ -133,7 +133,7 @@
 2470 '  LOCATE 0,IL+9:PRINT USING "&          &:#####.## m";"Approx altitude";AL#
 2480 '  LOCATE 0,IL+10:PRINT "----------------"
 2481   GET DATE DA$:GET TIME TM$:PSET(0,0),1:PRINT #1,DA$;" ";TM$;" ";HP#;"hPa";"  "
-2482   Y=BY+HP#-1000
+2482   HP#=1000:Y=MY*(MH-HP#)/RG
 2483   PSET(MX,BY),15:PSET(MX-1,Y),7
 2484   COPY (NX+1,NY)-(MX,MY) TO (NX,NY)
 2485   'Interval wait
