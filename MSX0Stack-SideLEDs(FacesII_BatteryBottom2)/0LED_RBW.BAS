@@ -37,9 +37,7 @@
 460   DATA 12,0,15
 470   DATA 15,0,9
 480 'All LEDs off
-490   R=0:G=0:B=0:N=0
-500   PS$=CHR$(G+B)+CHR$(N+R):_IOTPUT("device/leds/data",PS$)
-510   'PS$=CHR$(0)+CHR$(&H0):_IOTPUT("device/leds/data",PS$)
+490   _IOTPUT("device/leds/data",0)
 520   RETURN
 530 'Reinitialize console
 540   COLOR 15,4,7
