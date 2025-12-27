@@ -15,17 +15,17 @@
 240   PS$=""
 250   FOR J=0 TO 9
 260   PS$=PS$+LE$(J)
-270 'Main
-280   NEXT J
+270   NEXT J
+280 'Main
 290   _IOTPUT("device/leds/data",PS$)
-300 'Rotate LED pattern
+300   'Rotate LED pattern
 310   PS$=MID$(PS$,3,18)+LEFT$(PS$,2)
 320   _IOTPUT("device/leds/data",PS$)
-330 'Wait
+330   'Wait
 340   TIME=0
 350   IF TIME<2 THEN 350
 360   GOTO 300 'Loop
-370 'Led Colors
+370 'Rainbow Colors
 380   DATA 15,0,0
 390   DATA 15,9,0
 400   DATA 12,15,0
